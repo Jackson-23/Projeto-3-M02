@@ -1,0 +1,26 @@
+{
+  "name": "desafio-veturelabs",
+  "version": "1.0.0",
+  "description": "desafio de trabalho",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jackson-23/Desafio-VetureLabs.git"
+  },
+  "author": "Jackson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jackson-23/Desafio-VetureLabs/issues"
+  },
+  "homepage": "https://github.com/Jackson-23/Desafio-VetureLabs#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
