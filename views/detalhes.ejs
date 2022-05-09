@@ -15,7 +15,7 @@
         <section class="cards">
                 <div class="card">
                     <ul>
-                        <li><img src="<%=  item.img %>" alt=""></li>
+                        <li><img src="<%= item.img %>" alt=""></li>
                         <li><%=  item.nome %></li>
                         <li>Autor: <%=  item.autor %></li>
                         <li>Ano: <%=  item.ano %></li>
@@ -25,9 +25,12 @@
                     </ul>
                 </div>
         </section>
+        <div class="button">
+        <a href="/delete/<%= item.id %>"><button class="del">Deletar</button></a>
+        </div>
     </main>
     <footer>
-        <p>Rodapé</p>
+
     </footer>
     
 </body>
