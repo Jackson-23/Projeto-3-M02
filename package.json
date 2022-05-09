@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "desafio de trabalho",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index",
-    "dev": "nodemon index"
+    "dev": "nodemon index -e js,html,ejs,css"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,10 @@
     "nodemon": "^2.0.16"
   },
   "dependencies": {
-    "express": "^4.18.1"
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "pg": "^8.7.3",
+    "sequelize": "^6.19.0"
   }
 }
