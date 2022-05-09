@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+a{
+    text-decoration: inherit;
+    color:inherit;
+}
+
 @font-face {
     font-family: Arial, Helvetica, sans-serif;
     src: url("");
@@ -77,7 +82,77 @@ footer{
     background-color: #033e34;
 }
 
-a{
-    text-decoration: inherit;
-    color:inherit;
-}
+
+
+/***************************************************************/
+/*Estilisação do cadastro**************************************/
+
+section#cadastro{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5rem;
+    
+    
+ }
+ section#cadastro div#fundo{
+    padding: 2rem;
+    max-width: 25rem;
+    min-width: 10rem;
+    background-color: rgba(0, 0, 0, 0.491);
+    border-radius: 15px;
+ }
+ 
+ section#cadastro button.cad{
+    display: flex;
+    margin: 2rem auto;
+ }
+ 
+ section#cadastro div#button{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+ }
+ 
+ section#cadastro h2{
+    width: 100%;
+    padding-bottom: 2rem;
+ }
+ 
+ section#cadastro form{
+    max-width: 25rem;
+    
+ }
+ 
+ section#cadastro form input{
+    width: 100%;
+    outline-color: rgb(34, 0, 255);
+    border: solid 2px gray;
+ }
+ 
+ section#cadastro div#button a#delete{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+ }
+ 
+ 
+ section#cadastro form button{
+    background-color: white;
+    padding: 1rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+    border: solid 3px blue;
+    transition: all .3s ease-in-out;
+ 
+ }
+ 
+ section#cadastro form button:hover{
+    background-color: black;
+    color: white;
+    border: solid 3px white;
+ }

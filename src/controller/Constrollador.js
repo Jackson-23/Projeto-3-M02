@@ -19,3 +19,7 @@ export const getdetalhes = async (req, res) => {
     console.log(item);
     res.render("detalhes.ejs", {item});
 }
+
+export const getcadastro = (req, res) =>{
+    res.render("cadastro.ejs");
+}
