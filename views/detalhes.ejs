@@ -11,20 +11,19 @@
 <body>
     <%- include('./partials/header.ejs') %>
     <main>
-        <h1>Biblioteca</h1>
+        <h1>Detalhes</h1>
         <section class="cards">
-            <% listitens.forEach(element =>{ %>
-            <a href="/detalhes/<%= element.id %>">
                 <div class="card">
                     <ul>
-                        <li><img src="<%=  element.img %>" alt=""></li>
-                        <li><%=  element.nome %></li>
-                        <li>Autor: <%=  element.autor %></li> 
+                        <li><img src="<%=  item.img %>" alt=""></li>
+                        <li><%=  item.nome %></li>
+                        <li>Autor: <%=  item.autor %></li>
+                        <li>Ano: <%=  item.ano %></li>
+                        <li>Edição: <%=  item.edicao %></li>
+                        <li>Quantidade de páginas: <%=  item.qtd_pg %></li>
                         
                     </ul>
                 </div>
-            </a>
-            <% }) %>
         </section>
     </main>
     <footer>

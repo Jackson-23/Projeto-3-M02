@@ -1,5 +1,5 @@
 {
-  "name": "desafio-veturelabs",
+  "name": "projeto-3-m02",
   "version": "1.0.0",
   "description": "desafio de trabalho",
   "main": "index.js",
@@ -26,6 +26,8 @@
     "ejs": "^3.1.7",
     "express": "^4.18.1",
     "pg": "^8.7.3",
+    "postgre": "^0.1.8",
+    "postgres": "^3.1.0",
     "sequelize": "^6.19.0"
   }
 }
