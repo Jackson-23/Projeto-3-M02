@@ -46,4 +46,4 @@ const initTable = async () => {
 
 initTable();
 
-module.exports = itens;
+//module.exports = itens;
