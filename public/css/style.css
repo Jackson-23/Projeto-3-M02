@@ -68,6 +68,11 @@ div.card{
     width: 200px;
 }
 
+div.card2{
+    margin: 2rem;
+    width: 200px;
+}
+
 section.cards li{
     list-style: none;
     margin: 8px 0;
