@@ -1,9 +1,9 @@
 import express from 'express'
 import { routers } from './src/routers/routers.js'
 import path from 'path'
-//import dotenv from 'dotenv'
+import dotenv from 'dotenv'
 
-//dotevn.config();
+dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3005;
 let __dirname = path.resolve(path.dirname(''))

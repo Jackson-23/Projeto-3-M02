@@ -39,3 +39,11 @@ export const itens = connection.define("itens", {
     updatedAt: false,
     timestamps: false
 });
+
+const initTable = async () => {
+    await itens.sync;
+}
+
+initTable();
+
+module.exports = itens;
