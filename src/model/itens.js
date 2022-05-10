@@ -41,7 +41,7 @@ export const itens = connection.define("itens", {
 });
 
 const initTable = async () => {
-    await itens.sync;
+    await itens.sync();
 }
 
 initTable();
