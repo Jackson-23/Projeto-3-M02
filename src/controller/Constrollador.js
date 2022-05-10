@@ -25,14 +25,17 @@ export const getdetalhes = async (req, res) => {
 }
 
 export const getcadastro = (req, res) =>{
-    res.render("cadastro.ejs");
+    let toggle = false;
+    res.render("cadastro.ejs", {toggle});
 }
 
 export const postcadastro = async (req, res) =>{
     const {nome, autor, imagem, ano, edicao, qtd_pg} = req.body;
+    let toggle = false;
     try {
         await connection.query(`INSERT INTO itens (nome, autor, img, ano, edicao, qtd_pg) VALUES('${nome}', '${autor}', '${imagem}', '${ano}', '${edicao}', '${qtd_pg}')`);
-        res.redirect('/');
+        toggle = true;
+        res.render('cadastro.ejs', {toggle});
     }
     catch(error){
         res.send(error.message);
